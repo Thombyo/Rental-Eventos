@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Eventos</title>
+    <link rel="stylesheet" th:href="@{/css/rental.css}" href="/src/main/resources/static/css/rental.css">
+</head>
+<body>
+    <br>
+    <h1>Bem-vindo ao Rental Eventos!</h1>
+    <br>
+    <form>
+        <div>
+        <label for="email">E-mail:</label>
+        <br>
+        <input type="text" id="email" placeholder="guest123@gmail.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="senha">Senha:</label>
+            <br>
+            <input type="password" id="senha" minlength="8" placeholder="guest1234" required>
+        </div>
+        <br>
+        <button>Logar</button>
+    </form>
+</body>
+</html>
