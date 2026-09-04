@@ -10,7 +10,7 @@ import com.senai.infoa.rental.models.Usuario;
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
     
     @Query(value = "select * from usuario where email = :email and senha = :senha", nativeQuery = true)
-    public Usuario findByUsuario(String email, String senha);
+    public Usuario findByUsuario(String senha, String email);
 
-    Usuario findByEmail(String email);
+    Usuario findByEmail(String email, String senha);
 }

@@ -33,7 +33,7 @@ public class UsuarioController {
     }
 
     @PutMapping("/atualizar/{id}")
-    public Usuario atualizar(@PathVariable String id, @RequestBody Usuario usuario) {
+    public Usuario atualizar(@PathVariable Integer id, @RequestBody Usuario usuario) {
         return us.atualizar(usuario, id);
     }
 

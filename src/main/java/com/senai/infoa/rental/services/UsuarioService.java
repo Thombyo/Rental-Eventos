@@ -24,8 +24,8 @@ public class UsuarioService {
         return null;
     }
 
-    public Usuario atualizar(Usuario usuario, String email){
-    Usuario usuario2 = ur.findByEmail(email);
+    public Usuario atualizar(Usuario usuario, Integer id){
+    Usuario usuario2 = ur.findById(id).orElse(null);
         if(usuario2 != null){
             usuario.setNome(usuario.getNome());
             usuario.setSenha(usuario.getSenha());
